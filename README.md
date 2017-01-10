@@ -1,2 +1,0 @@
-# switter
-something like twitter
