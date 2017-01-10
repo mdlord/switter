@@ -21,9 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FIRApp.configure()
         FIRAuth.auth()?.signIn(withEmail: "mayankdaswani123@yahoo.com", password: "123456", completion: { (user,error) in
             if error == nil{
-                print(user?.email!)
+                print(user?.email! as Any)
             }else{
-                print(error?.localizedDescription)
+                print(error?.localizedDescription as Any)
             }
         })
         

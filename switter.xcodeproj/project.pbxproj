@@ -10,6 +10,8 @@
 		0B361C72BE46BA650A81172D /* Pods_switterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E741B0D29095F91659DDD9E /* Pods_switterTests.framework */; };
 		3EE5B5D05C551D7E14D1CEB2 /* Pods_switterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6747CE902F502744E0D8C48 /* Pods_switterUITests.framework */; };
 		AC34DA14F45E506EEAA320C2 /* Pods_switter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44E503FB7AB2D328AB94859F /* Pods_switter.framework */; };
+		BEAD7C661E259DF200EAEBFD /* ImagepushCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAD7C651E259DF200EAEBFD /* ImagepushCell.swift */; };
+		BEAD7C681E259E1100EAEBFD /* TextpushCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAD7C671E259E1100EAEBFD /* TextpushCell.swift */; };
 		BECAB9911E248A0B003E4B62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECAB9901E248A0B003E4B62 /* AppDelegate.swift */; };
 		BECAB9931E248A0B003E4B62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECAB9921E248A0B003E4B62 /* ViewController.swift */; };
 		BECAB9961E248A0B003E4B62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BECAB9941E248A0B003E4B62 /* Main.storyboard */; };
@@ -45,6 +47,8 @@
 		5900B7A7DB546448826B8A41 /* Pods-switterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-switterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-switterTests/Pods-switterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		615351149B43B5C3AA815379 /* Pods-switter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-switter.release.xcconfig"; path = "Pods/Target Support Files/Pods-switter/Pods-switter.release.xcconfig"; sourceTree = "<group>"; };
 		8B13AAB14B600527B2DC63AD /* Pods-switterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-switterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-switterTests/Pods-switterTests.release.xcconfig"; sourceTree = "<group>"; };
+		BEAD7C651E259DF200EAEBFD /* ImagepushCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagepushCell.swift; sourceTree = "<group>"; };
+		BEAD7C671E259E1100EAEBFD /* TextpushCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextpushCell.swift; sourceTree = "<group>"; };
 		BECAB98D1E248A0A003E4B62 /* switter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = switter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BECAB9901E248A0B003E4B62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BECAB9921E248A0B003E4B62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +146,8 @@
 				BECAB9901E248A0B003E4B62 /* AppDelegate.swift */,
 				BECAB9921E248A0B003E4B62 /* ViewController.swift */,
 				BECAB9941E248A0B003E4B62 /* Main.storyboard */,
+				BEAD7C651E259DF200EAEBFD /* ImagepushCell.swift */,
+				BEAD7C671E259E1100EAEBFD /* TextpushCell.swift */,
 				BECAB9971E248A0B003E4B62 /* Assets.xcassets */,
 				BECAB9991E248A0B003E4B62 /* LaunchScreen.storyboard */,
 				BECAB99C1E248A0B003E4B62 /* Info.plist */,
@@ -450,7 +456,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEAD7C661E259DF200EAEBFD /* ImagepushCell.swift in Sources */,
 				BECAB9931E248A0B003E4B62 /* ViewController.swift in Sources */,
+				BEAD7C681E259E1100EAEBFD /* TextpushCell.swift in Sources */,
 				BECAB9911E248A0B003E4B62 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -702,6 +710,7 @@
 				BECAB9B71E248A0B003E4B62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BECAB9B81E248A0B003E4B62 /* Build configuration list for PBXNativeTarget "switterTests" */ = {
 			isa = XCConfigurationList;
@@ -710,6 +719,7 @@
 				BECAB9BA1E248A0B003E4B62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BECAB9BB1E248A0B003E4B62 /* Build configuration list for PBXNativeTarget "switterUITests" */ = {
 			isa = XCConfigurationList;
@@ -718,6 +728,7 @@
 				BECAB9BD1E248A0B003E4B62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
