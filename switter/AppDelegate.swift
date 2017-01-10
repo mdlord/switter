@@ -17,6 +17,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        FIRApp.configure()
+        FIRAuth.auth()?.signIn(withEmail: "mayankdaswani123@yahoo.com", password: "123456", completion: { (user,error) in
+            if error == nil{
+                print(user?.email!)
+            }else{
+                print(error?.localizedDescription)
+            }
+        })
+        
         return true
     }
 
