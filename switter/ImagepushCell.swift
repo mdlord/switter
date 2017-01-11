@@ -10,6 +10,10 @@ import UIKit
 
 class ImagepushCell: UITableViewCell {
 
+
+
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

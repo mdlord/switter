@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wersm-twitter-blue-dark-657x360" translatesAutoresizingMaskIntoConstraints="NO" id="nB2-Sx-6QR">
-                                <rect key="frame" x="16" y="270.5" width="343" height="126"/>
+                                <rect key="frame" x="16" y="271" width="343" height="126"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="nB2-Sx-6QR" secondAttribute="height" multiplier="49:18" id="7X1-5a-utJ"/>
                                     <constraint firstAttribute="width" constant="343" id="fop-Xz-Atf"/>
