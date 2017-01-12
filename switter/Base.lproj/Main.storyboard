@@ -147,10 +147,10 @@
             </objects>
             <point key="canvasLocation" x="2330.4000000000001" y="98.50074962518741"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="s60-oO-bLG">
             <objects>
-                <viewController id="Uaw-Y7-I0g" sceneMemberID="viewController">
+                <viewController id="Uaw-Y7-I0g" customClass="LoginViewController" customModule="switter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Mr5-1K-x81"/>
                         <viewControllerLayoutGuide type="bottom" id="zYt-ta-skx"/>
@@ -179,6 +179,9 @@
                                 <state key="normal" title="Sign In">
                                     <color key="titleColor" red="0.043654305710000001" green="0.044113824709999999" blue="0.044113824709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginAction:" destination="Uaw-Y7-I0g" eventType="touchUpInside" id="hnr-EC-ubP"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="OVu-Cw-p3O">
                                 <rect key="frame" x="16" y="318.5" width="343" height="30"/>
@@ -198,7 +201,7 @@
                                     <color key="titleColor" red="0.043654305710000001" green="0.044113824709999999" blue="0.044113824709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="kRS-bE-6LE" kind="presentation" id="hnK-MB-CQr"/>
+                                    <segue destination="kRS-bE-6LE" kind="presentation" modalTransitionStyle="flipHorizontal" id="llh-UP-S6y"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JL1-ue-9Zj">
@@ -231,15 +234,19 @@
                             <constraint firstItem="kjC-dW-9Wo" firstAttribute="centerX" secondItem="PBQ-Yj-iQO" secondAttribute="centerX" id="yaq-jY-EXS"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="OVu-Cw-p3O" id="tGN-i7-vpH"/>
+                        <outlet property="usernameTextField" destination="kjC-dW-9Wo" id="TFc-u6-JEi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2gL-mH-Pzs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1408.8" y="-547.37631184407803"/>
+            <point key="canvasLocation" x="1228" y="-546"/>
         </scene>
-        <!--View Controller-->
+        <!--Signup View Controller-->
         <scene sceneID="4fu-dJ-L0c">
             <objects>
-                <viewController id="kRS-bE-6LE" sceneMemberID="viewController">
+                <viewController id="kRS-bE-6LE" customClass="SignupViewController" customModule="switter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="izg-3f-Vfa"/>
                         <viewControllerLayoutGuide type="bottom" id="jwl-rh-qKj"/>
@@ -278,12 +285,16 @@
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Person Male_000000_75" translatesAutoresizingMaskIntoConstraints="NO" id="286-5k-DVx">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Person Male_000000_75" translatesAutoresizingMaskIntoConstraints="NO" id="286-5k-DVx">
                                 <rect key="frame" x="16" y="201.5" width="70" height="70"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="Bu8-sW-CUO"/>
                                     <constraint firstAttribute="height" constant="70" id="GuU-y5-uFB"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="jUx-nA-RhT" appends="YES" id="Iea-eY-78e"/>
+                                </connections>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bJ2-ly-UqM">
                                 <rect key="frame" x="16" y="355.5" width="343" height="30"/>
@@ -323,6 +334,14 @@
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3O-WO-1JY">
+                                <rect key="frame" x="145" y="629" width="85" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sign In Page"/>
+                                <connections>
+                                    <segue destination="Uaw-Y7-I0g" kind="presentation" modalTransitionStyle="flipHorizontal" id="Y2f-Xd-LUQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.00045323109949999999" green="0.2491315603" blue="0.35732567310000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -362,10 +381,24 @@
                             <constraint firstItem="286-5k-DVx" firstAttribute="leading" secondItem="4Sd-gH-kD4" secondAttribute="leadingMargin" id="y6J-Q9-AsF"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="CountryTextField" destination="lvR-CF-U4c" id="R8G-Hh-5Zq"/>
+                        <outlet property="NameTextField" destination="YfJ-Oy-A14" id="adi-bE-ccy"/>
+                        <outlet property="PasswordTextField" destination="bJ2-ly-UqM" id="hUt-Rp-qkK"/>
+                        <outlet property="UserNameTextField" destination="wZE-YE-n1f" id="lAq-XJ-uNR"/>
+                        <outlet property="emailTextField" destination="vJy-nh-bC2" id="tJA-t0-rW9"/>
+                        <outlet property="imagedisp" destination="286-5k-DVx" id="iA4-Nz-lPw"/>
+                        <outlet property="rePasswordTextField" destination="EcP-P4-GXa" id="3Ak-GE-Ffh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OhM-0f-ZMG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="jUx-nA-RhT">
+                    <connections>
+                        <action selector="choosePictureActionWithSender:" destination="kRS-bE-6LE" id="SiS-Aj-P5p"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2125.5999999999999" y="-546.47676161919048"/>
+            <point key="canvasLocation" x="1935" y="-546"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SxU-vA-h6t">

@@ -12,8 +12,8 @@
 		AC34DA14F45E506EEAA320C2 /* Pods_switter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44E503FB7AB2D328AB94859F /* Pods_switter.framework */; };
 		BEAD7C661E259DF200EAEBFD /* ImagepushCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAD7C651E259DF200EAEBFD /* ImagepushCell.swift */; };
 		BEAD7C681E259E1100EAEBFD /* TextpushCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAD7C671E259E1100EAEBFD /* TextpushCell.swift */; };
-		BEAD7C6A1E2613D800EAEBFD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAD7C691E2613D800EAEBFD /* LoginViewController.swift */; };
-		BEAD7C6C1E2613FD00EAEBFD /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAD7C6B1E2613FD00EAEBFD /* SignupViewController.swift */; };
+		BEAD7C6E1E280FFB00EAEBFD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAD7C6D1E280FFB00EAEBFD /* LoginViewController.swift */; };
+		BEAD7C701E28229C00EAEBFD /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAD7C6F1E28229C00EAEBFD /* SignupViewController.swift */; };
 		BECAB9911E248A0B003E4B62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECAB9901E248A0B003E4B62 /* AppDelegate.swift */; };
 		BECAB9931E248A0B003E4B62 /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECAB9921E248A0B003E4B62 /* PushViewController.swift */; };
 		BECAB9961E248A0B003E4B62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BECAB9941E248A0B003E4B62 /* Main.storyboard */; };
@@ -51,8 +51,8 @@
 		8B13AAB14B600527B2DC63AD /* Pods-switterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-switterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-switterTests/Pods-switterTests.release.xcconfig"; sourceTree = "<group>"; };
 		BEAD7C651E259DF200EAEBFD /* ImagepushCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagepushCell.swift; sourceTree = "<group>"; };
 		BEAD7C671E259E1100EAEBFD /* TextpushCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextpushCell.swift; sourceTree = "<group>"; };
-		BEAD7C691E2613D800EAEBFD /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		BEAD7C6B1E2613FD00EAEBFD /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		BEAD7C6D1E280FFB00EAEBFD /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BEAD7C6F1E28229C00EAEBFD /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		BECAB98D1E248A0A003E4B62 /* switter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = switter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BECAB9901E248A0B003E4B62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BECAB9921E248A0B003E4B62 /* PushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
@@ -150,8 +150,8 @@
 				BECAB9901E248A0B003E4B62 /* AppDelegate.swift */,
 				BECAB9921E248A0B003E4B62 /* PushViewController.swift */,
 				BECAB9941E248A0B003E4B62 /* Main.storyboard */,
-				BEAD7C691E2613D800EAEBFD /* LoginViewController.swift */,
-				BEAD7C6B1E2613FD00EAEBFD /* SignupViewController.swift */,
+				BEAD7C6F1E28229C00EAEBFD /* SignupViewController.swift */,
+				BEAD7C6D1E280FFB00EAEBFD /* LoginViewController.swift */,
 				BEAD7C651E259DF200EAEBFD /* ImagepushCell.swift */,
 				BEAD7C671E259E1100EAEBFD /* TextpushCell.swift */,
 				BECAB9971E248A0B003E4B62 /* Assets.xcassets */,
@@ -462,11 +462,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEAD7C6C1E2613FD00EAEBFD /* SignupViewController.swift in Sources */,
+				BEAD7C701E28229C00EAEBFD /* SignupViewController.swift in Sources */,
+				BEAD7C6E1E280FFB00EAEBFD /* LoginViewController.swift in Sources */,
 				BEAD7C661E259DF200EAEBFD /* ImagepushCell.swift in Sources */,
 				BECAB9931E248A0B003E4B62 /* PushViewController.swift in Sources */,
 				BEAD7C681E259E1100EAEBFD /* TextpushCell.swift in Sources */,
-				BEAD7C6A1E2613D800EAEBFD /* LoginViewController.swift in Sources */,
 				BECAB9911E248A0B003E4B62 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
