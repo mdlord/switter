@@ -9,12 +9,12 @@
 import UIKit
 //import Switter
 
-class SignupViewController: UIViewController,UITextFieldDelegate,UIPickerViewDelegate,UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class SignupViewController: UIViewController,UITextFieldDelegate,UIPickerViewDelegate,UIImagePickerControllerDelegate, UINavigationControllerDelegate{
 
     @IBOutlet weak var NameTextField: UITextField!
     @IBOutlet weak var UserNameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var CountryTextField: UITextField!
+    @IBOutlet weak var countryTextField: UITextField!
     @IBOutlet weak var PasswordTextField: UITextField!
     @IBOutlet weak var rePasswordTextField: UITextField!
     @IBOutlet weak var imagedisp: UIImageView!
@@ -30,7 +30,7 @@ class SignupViewController: UIViewController,UITextFieldDelegate,UIPickerViewDel
         PasswordTextField.delegate = self
         rePasswordTextField.delegate = self
         emailTextField.delegate = self
-        CountryTextField.delegate = self
+        countryTextField.delegate = self
         
 
         // Retrieving all the countries, Sorting and Storing them inside countryArrays
@@ -39,10 +39,17 @@ class SignupViewController: UIViewController,UITextFieldDelegate,UIPickerViewDel
             let name = NSLocale(localeIdentifier: "en_EN").displayName(forKey: NSLocale.Key.identifier, value: id) ?? "Country not found for code: \(code)"
             
             countryArrays.append(name)
+            print(name)
             countryArrays.sort(by: { (name1, name2) -> Bool in
                 name1 < name2
             })
         }
+        
+        pickerView = UIPickerView()
+        pickerView.delegate = self
+        //pickerView.dataSource = self.countryArrays
+        pickerView.backgroundColor = UIColor.black
+        countryTextField.inputView = pickerView
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
         tapGesture.numberOfTapsRequired = 1
@@ -123,20 +130,6 @@ class SignupViewController: UIViewController,UITextFieldDelegate,UIPickerViewDel
         
     }
     
-    
-//    func imagePickerController(_picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
-//        
-//        //_picker.delegate = self
-//        //self.dismiss(animated: true, completion: nil)
-//        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
-//            self.imagedisp.image = image
-//        } else{
-//            print("Something went wrong")
-//        }
-//        dismiss(animated: true, completion:nil)
-//    }
-//    
-    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         imagedisp.image = info[UIImagePickerControllerOriginalImage] as? UIImage;
         dismiss(animated: true, completion:nil)
@@ -152,7 +145,7 @@ class SignupViewController: UIViewController,UITextFieldDelegate,UIPickerViewDel
         UserNameTextField.resignFirstResponder()
         PasswordTextField.resignFirstResponder()
         emailTextField.resignFirstResponder()
-        CountryTextField.resignFirstResponder()
+        countryTextField.resignFirstResponder()
         rePasswordTextField.resignFirstResponder()
         return true
     }
@@ -190,10 +183,10 @@ class SignupViewController: UIViewController,UITextFieldDelegate,UIPickerViewDel
     }
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        CountryTextField.text = countryArrays[row]
+        countryTextField.text = countryArrays[row]
     }
     
-    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return countryArrays.count
     }
     

@@ -14,6 +14,7 @@
 		BEAD7C681E259E1100EAEBFD /* TextpushCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAD7C671E259E1100EAEBFD /* TextpushCell.swift */; };
 		BEAD7C6E1E280FFB00EAEBFD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAD7C6D1E280FFB00EAEBFD /* LoginViewController.swift */; };
 		BEAD7C701E28229C00EAEBFD /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAD7C6F1E28229C00EAEBFD /* SignupViewController.swift */; };
+		BEAD7C721E2898CB00EAEBFD /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAD7C711E2898CB00EAEBFD /* AuthenticationService.swift */; };
 		BECAB9911E248A0B003E4B62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECAB9901E248A0B003E4B62 /* AppDelegate.swift */; };
 		BECAB9931E248A0B003E4B62 /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECAB9921E248A0B003E4B62 /* PushViewController.swift */; };
 		BECAB9961E248A0B003E4B62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BECAB9941E248A0B003E4B62 /* Main.storyboard */; };
@@ -53,6 +54,7 @@
 		BEAD7C671E259E1100EAEBFD /* TextpushCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextpushCell.swift; sourceTree = "<group>"; };
 		BEAD7C6D1E280FFB00EAEBFD /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BEAD7C6F1E28229C00EAEBFD /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		BEAD7C711E2898CB00EAEBFD /* AuthenticationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 		BECAB98D1E248A0A003E4B62 /* switter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = switter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BECAB9901E248A0B003E4B62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BECAB9921E248A0B003E4B62 /* PushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				BECAB9941E248A0B003E4B62 /* Main.storyboard */,
 				BEAD7C6F1E28229C00EAEBFD /* SignupViewController.swift */,
 				BEAD7C6D1E280FFB00EAEBFD /* LoginViewController.swift */,
+				BEAD7C711E2898CB00EAEBFD /* AuthenticationService.swift */,
 				BEAD7C651E259DF200EAEBFD /* ImagepushCell.swift */,
 				BEAD7C671E259E1100EAEBFD /* TextpushCell.swift */,
 				BECAB9971E248A0B003E4B62 /* Assets.xcassets */,
@@ -468,6 +471,7 @@
 				BECAB9931E248A0B003E4B62 /* PushViewController.swift in Sources */,
 				BEAD7C681E259E1100EAEBFD /* TextpushCell.swift in Sources */,
 				BECAB9911E248A0B003E4B62 /* AppDelegate.swift in Sources */,
+				BEAD7C721E2898CB00EAEBFD /* AuthenticationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

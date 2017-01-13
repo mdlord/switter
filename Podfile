@@ -8,6 +8,7 @@ target 'switter' do
   # Pods for switter
     pod 'Firebase/Core'
     pod 'Firebase/Auth'
+    pod 'Firebase/Database'
 
   target 'switterTests' do
     inherit! :search_paths
