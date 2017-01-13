@@ -386,6 +386,7 @@
                         <outlet property="NameTextField" destination="YfJ-Oy-A14" id="adi-bE-ccy"/>
                         <outlet property="PasswordTextField" destination="bJ2-ly-UqM" id="hUt-Rp-qkK"/>
                         <outlet property="UserNameTextField" destination="wZE-YE-n1f" id="lAq-XJ-uNR"/>
+                        <outlet property="countryTextField" destination="lvR-CF-U4c" id="UqB-gj-wPo"/>
                         <outlet property="emailTextField" destination="vJy-nh-bC2" id="tJA-t0-rW9"/>
                         <outlet property="imagedisp" destination="286-5k-DVx" id="iA4-Nz-lPw"/>
                         <outlet property="rePasswordTextField" destination="EcP-P4-GXa" id="3Ak-GE-Ffh"/>
