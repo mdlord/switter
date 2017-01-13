@@ -21,13 +21,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FIRApp.configure()
         FIRAuth.auth()?.signIn(withEmail: "mayankdaswani123@yahoo.com", password: "123456", completion: { (user,error) in
             if error == nil{
-                print(user?.email! as Any)
+                print(user?.email!)
             }else{
-                print(error?.localizedDescription as Any)
+                print(error?.localizedDescription)
             }
         })
-        
-        return true
+    
+       return true
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -52,6 +52,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
 }
+
 
